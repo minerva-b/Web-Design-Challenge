@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Cloudiness</title>
+  <title>Cloudiness - WeatherPy</title>
 
   <!-- Bootstrap CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -60,7 +60,7 @@
 
     <!-- Image Preview -->
     <div class="float-center">
-      <img src="../Visualizations/Fig3.png" class="rounded" alt="Lat v. Cloudiness">
+      <img src="../Visualizations/Fig3.png" alt="Lat v. Cloudiness" width="auto" height="auto" class="img-responsive">
       <p>&nbsp;</p>
     </div>
 
@@ -79,19 +79,24 @@
     <div class="row">
       <div class="col-lg-3">
         <h3>Visualizations</h3>
-        <!-- These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-        <div class="col-3 col-sm-6 col-md-12" class="pull-left" href="max_temp.html">
-          <img src="../Visualizations/Fig1.png" class="rounded" alt="Latitude_v_Max_Temp">
-        </div> 
-        <div class="col-3 col-sm-6 col-md-12" class="pull-left" href="humidity.html">
-          <img src="../Visualizations/Fig2.png" class="rounded" alt="Latitude_v_Humidity">
-        </div>
-        <div class="col-3 col-sm-6 col-md-12" class="pull-right" href="cloudiness.html">
-          <img src="../Visualizations/Fig3.png" class="rounded" alt="Latitude_v_Cloudiness">
-        </div>
-        <div class="col-3 col-sm-6 col-md-12" class="pull-right" href="wind_speed.html">
-          <img src="../Visualizations/Fig4.png" class="rounded" alt="Latitude_v_Wind_Speed">
-        </div>       
+        
+        <!-- The following image works as a link: -->
+        <a href="max_temp.html">
+          <img alt="Latitude_v_Max_Temp" src="../Visualizations/Fig1.png"
+          width="150" height="70">
+        </a>
+        <a href="humidity.html">
+          <img alt="Latitude_v_Humidity" src="../Visualizations/Fig2.png"
+          width="150" height="70">
+        </a>
+        <a href="cloudiness.html">
+          <img alt="Latitude_v_Cloudiness" src="../Visualizations/Fig3.png"
+          width="150" height="70">
+        </a>
+        <a href="wind_speed.html">
+          <img alt="Latitude_v_Wind_Speed" src="../Visualizations/Fig4.png"
+          width="150" height="70">
+        </a>    
       </div>
     </div>
   </div>
