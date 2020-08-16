@@ -4,112 +4,124 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Homepage</title>
+  <title>Homepage - WeatherPy</title>
 
   <!-- Bootstrap CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <!-- Creating path to stylesheet -->
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  
-    <!-- Creating the Navigation bar w/ dropdown menu -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="main.html">WeatherPy</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparison: A view of all plots</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
+  <!-- Creating the Navigation bar w/ dropdown menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="main.html">WeatherPy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparison: A view of all plots</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Creating the Landing Page (Home) -->
   <div class="container">
-
-    <!-- Title of Homepage -->
-    <div class="row">
-      <div class="col-lg-12">
-        <h1>Project Overview:</h1>
-        <!-- This helps create space between sections of text -->
-        <p>&nbsp;</p>
-      </div>
-    </div>
-
-    <!-- Image Preview -->
-    <div class="float-left">
-      <img src="../Visualizations/Fig1.png" class="img-responsive" alt="Preview_Image">
-      <p>&nbsp;</p>
-    </div>
-
-    <!-- Subheader -->
     <div class="row">
       <div class="col-lg-6">
+        <h1>Project Overview:</h1>
+
+        <!-- This helps create space between sections of text -->
+        <p>&nbsp;</p>
+
+        <!-- Image Preview -->
+        <div class="float-left">
+          <img src="../Visualizations/Fig1.png" class="img-responsive" alt="Preview_Image">
+          <p>&nbsp;</p>
+        </div>
+
         <h2>WeatherPy</h2>
+        <p>&nbsp;</p>
+
+        <!-- Paragraghs - Explanation of Project -->
+        <p1>The purpose of this project is to analyze how the weather changes as you move closer or farther away from
+          the Equator. First, we must use the OpenWeatherMap API to call and pull data on 500+ cities around the world.
+          The goal is to compile a diverse set of coordinates (latidude, longitude) to observe from places around the
+          world.</p1>
+        <p>&nbsp;</p>
+
+        <p2>Once we have compiled a list of at least 500 cities we use tools such as Matplotlib (a python library) to
+          plot the various factors of the weather. These factors include the max temperature, humidity, cloudiness, and
+          wind speed up against the latitude of the cities in our dataset. See 'Data' to view the compiled 500+ cities
+          for this project. You can also find the data visualizations on this site along with explanations of the trends
+          and correlations.</p2>
+        <p>&nbsp;</p>
+
+      </div>
+
+
+    <!-- This section is for the visualizations side bar -->
+          <div class="col-lg-3">
+          <h3>Visualizations</h3>
+
+          <!-- The following image works as a link: -->
+          <div class="col-lg-3">
+            <a href="max_temp.html">
+              <img alt="Latitude_v_Max_Temp" src="../Visualizations/Fig1.png" width="150" height="70">
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="humidity.html">
+              <img alt="Latitude_v_Humidity" src="../Visualizations/Fig2.png" width="150" height="70">
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="cloudiness.html">
+              <img alt="Latitude_v_Cloudiness" src="../Visualizations/Fig3.png" width="150" height="70">
+            </a>
+          </div>
+          <div class="col-lg-3">
+            <a href="wind_speed.html">
+              <img alt="Latitude_v_Wind_Speed" src="../Visualizations/Fig4.png" width="150" height="70">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-      
-    <!-- Paragraghs - Explanation of Project -->
-    <div class="col-md-6">
-      <p1>The purpose of this project is to analyze how the weather changes as you move closer or farther away from the Equator. First, we must use the OpenWeatherMap API to call and pull data on 500+ cities around the world. The goal is to compile a diverse set of coordinates (latidude, longitude) to observe from places around the world.</p1>
-    </div>
-    <p>&nbsp;</p>
 
-    <div class="col-md-6">
-      <p2>Once we have compiled a list of at least 500 cities we use tools such as Matplotlib (a python library) to plot the various factors of the weather. These factors include the max temperature, humidity, cloudiness, and wind speed up against the latitude of the cities in our dataset. See 'Data' to view the compiled 500+ cities for this project. You can also find the data visualizations on this site along with explanations of the trends and correlations.</p2>
-    </div>
-    <p>&nbsp;</p>
-  </div>
-
-  <!-- This section is for the visualizations side bar -->
-  <div class="container">
-
-    <!-- Subheader -->
-    <div class="row">
-      <div class="col-lg-3">
-        <h3>Visualizations</h3>
-        <!-- These are full wide on a medium screen, half wide on a small screen, 1/4 wide on an extra small screen-->
-        <div class="col-3 col-sm-6 col-md-12" class="pull-left" href="max_temp.html">
-          <img src="../Visualizations/Fig1.png" class="rounded" alt="Latitude_v_Max_Temp">
-        </div> 
-        <div class="col-3 col-sm-6 col-md-12" class="pull-left" href="humidity.html">
-          <img src="../Visualizations/Fig2.png" class="rounded" alt="Latitude_v_Humidity">
-        </div>
-        <div class="col-3 col-sm-6 col-md-12" class="pull-right" href="cloudiness.html">
-          <img src="../Visualizations/Fig3.png" class="rounded" alt="Latitude_v_Cloudiness">
-        </div>
-        <div class="col-3 col-sm-6 col-md-12" class="pull-right" href="wind_speed.html">
-          <img src="../Visualizations/Fig4.png" class="rounded" alt="Latitude_v_Wind_Speed">
-        </div>       
-      </div>
-    </div>
-  </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 
 </body>
 
