@@ -26,7 +26,7 @@
     </button>
 
     <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -52,9 +52,8 @@
   <!-- Creating the Landing Page (Home) -->
   <div class="container">
     <div class="row">
-      <div id="overview_text" class="col-sm-12 col-lg-8">
+      <div id="overview_title" class="col-sm-12 col-lg-8">
         <h1>Project Overview: Latitude v. X</h1>
-
         <!-- This helps create space between sections of text -->
         <p>&nbsp;</p>
 
@@ -70,41 +69,33 @@
           The goal is to compile a diverse set of coordinates (latidude, longitude) to observe from places around the
           world.</p1>
         <p>&nbsp;</p>
-
         <p2>Once we have compiled a list of at least 500 cities we use tools such as Matplotlib (a python library) to
           plot the various factors of the weather. These factors include the max temperature, humidity, cloudiness, and
           wind speed up against the latitude of the cities in our dataset. See 'Data' to view the compiled 500+ cities
           for this project. You can also find the data visualizations on this site along with explanations of the trends
           and correlations.</p2>
         <p>&nbsp;</p>
-
       </div>
 
     <!-- This section is for the visualizations side bar -->
-        <div id="side_bar" class="col-sm-12 col-lg-4">
+        <div id="sidebar" class="col-sm-12 col-lg-4">
             <h3>Visualizations</h3>
-
           <!-- The following image works as a link: -->
-          <div class="col-sm-3 col-lg-4">
             <a href="max_temp.html">
-              <img alt="Latitude_v_Max_Temp" src="../Visualizations/Fig1.png" width=100% height=100%>
+              <img alt="Latitude_v_Max_Temp" src="../Visualizations/Fig1.png" width="150" height="70">
             </a>
-          </div>
-          <div class="col-sm-3 col-lg-4">
+
             <a href="humidity.html">
-              <img alt="Latitude_v_Humidity" src="../Visualizations/Fig2.png" width=100% height=100%>
+              <img alt="Latitude_v_Humidity" src="../Visualizations/Fig2.png" width="150" height="70">
             </a>
-          </div>
-          <div class="col-sm-3 col-lg-4">
+
             <a href="cloudiness.html">
-              <img alt="Latitude_v_Cloudiness" src="../Visualizations/Fig3.png" width=100% height=100%>
+              <img alt="Latitude_v_Cloudiness" src="../Visualizations/Fig3.png" width="150" height="70">
             </a>
-          </div>
-          <div class="col-sm-3 col-lg-4">
+
             <a href="wind_speed.html">
-              <img alt="Latitude_v_Wind_Speed" src="../Visualizations/Fig4.png" width=100% height=100%>
+              <img alt="Latitude_v_Wind_Speed" src="../Visualizations/Fig4.png" width="150" height="70">
             </a>
-          </div>
         </div>
       </div>
     </div>
