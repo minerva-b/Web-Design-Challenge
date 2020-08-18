@@ -19,3 +19,11 @@ h3 {
     color: navy;
 }
 
+.navbar-brand {
+    background-color: navy;
+}
+
+.navbar-light .navbar-brand {
+    color: azure;
+}
+
