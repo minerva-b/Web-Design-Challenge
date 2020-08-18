@@ -1,2 +1,21 @@
+body {
+    background-color: rgb(241, 245, 255);
+}
 
-  
+h1 {
+    font-size: 40px;
+    color: navy;
+}
+
+h3 {
+    font-size: 30px;
+    color: navy;
+}
+
+.caption {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: navy;
+}
+
